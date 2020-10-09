@@ -1,8 +1,9 @@
 body {
   margin: 50px;
-font-family: 'Alegreya Sans', sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   background: #ffe8d6;
   text-align: center;
+  color: #333333;
 }
 
 h1 {
@@ -10,33 +11,22 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
-  padding: 8px;
-  position: relative;
-  bottom: 0px;
+  font-size: 25px;
 }
 
 h3 {
   font-size: 15px;
 }
 
-
 .temptoday {
-  color: #ffffff;
   font-size: 100px;
   font-weight: bolder;
-  text-shadow: 3px 3px #666666;
+  height: 120px;
 }
 
 .celsius {
-  font-size: 80px;
-  color: #ffffff;
-  font-weight: bolder;
-  text-shadow: 3px 3px #666666;
-  position: relative;
-  right: -40px;
+  font-size: 60px;
 }
-
 
 .container {
   border: 2px solid #ffffff;
@@ -55,7 +45,8 @@ h3 {
 }
 
 input {
-  width: 300px;}
+  width: 200px;
+}
 
 button {
   background-color: #99582a;
