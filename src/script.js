@@ -1,4 +1,3 @@
-import "./styles.css";
 
 let today = new Date();
 let date = today.getDate();
