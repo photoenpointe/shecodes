@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    <div class="frame">
     <div id="app"></div>
     <h3 id="date">January 01, 2000</h3>
     <h3 id="time">10:00</h3>
@@ -33,24 +34,24 @@
 
 			<br>
     <section class="forecast">
-        <div colspan="5" id="forecast"><h2>Forecast</h2></div>
+        <div colspan="5" id="forecast"><h2>Hourly Forecast</h2></div>
         <div class="container">
 
             <div class="row row-cols-5">
-                <div class="col">Thursday</div>
-                <div class="col">Friday</div>
-                <div class="col">Saturday</div>
-                <div class="col">Sunday</div>
-                <div class="col">Monday</div>
-                <div class="col">🌤 <br>25°C / 10°C</div>
-                <div class="col">⛅️ <br>25°C / 15°C</div>
-                <div class="col">☀️ <br>31°C / 15°C</div>
-                <div class="col">☀️ <br>29°C / 18°C</div>
-                <div class="col">☀️ <br>30°C / 18°C</div>
+                <div class="col">10:00</div>
+                <div class="col">11:00</div>
+                <div class="col">12:00</div>
+                <div class="col">13:00</div>
+                <div class="col">14:00</div>
+                <div class="col">🌤 <br>25°C</div>
+                <div class="col">⛅️ <br>25°C</div>
+                <div class="col">☀️ <br>31°C</div>
+                <div class="col">☀️ <br>29°C</div>
+                <div class="col">☀️ <br>30°C</div>
             </div>
         </div>
-        </div>
-		</section>
+    </section>
+
 		<br>
 		<div class="input-group mb-3">
       <form id="search-box">
@@ -58,6 +59,7 @@
           <button type="submit" id="search">Search <i class="fas fa-search"></i></button>
           <button type="submit" id="current">Current Location <i class="fas fa-location-arrow"></i> </button>
       </form>
+      </div>
       </div>
       <br>
       <footer>
