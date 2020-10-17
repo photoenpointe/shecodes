@@ -14,12 +14,16 @@
 
 <body>
   <div class="frame">
+    <span class="convert">
+      <a href="#" id="celsius-link" class="active">°C</a> | 
+      <a href="#" id="fahrenheit-link">°F</a>
+    </span>
     <h1 id="date">January 01, 2000</h1>
     <h1 id="time">10:00</h1>
     <h2 id="city"></h2>
     <div class="temptoday">
       <span id="temptoday"></span>
-      <span class="celsius">°C</span>
+      <span class="unit">°</span>
         <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Partly cloudy" id="icon"/>
 
     </div>
@@ -43,6 +47,7 @@
   <footer>
     <a href="https://github.com/photoenpointe/shecodes">Open-source code</a> by Yoshie B.
   </footer>
+  </div>
   </div>
 </body>
 <script src="src/script.js"></script>

@@ -1,14 +1,31 @@
 .frame {
   width: 500px;
   padding: 40px;
-  border: #99582a solid 2px;
+  border: #c8553d solid 2px;
   border-radius: 25px;
   margin: 50px auto;
   position: center;
   font-family: "Alegreya Sans", sans-serif;
-  background: #ffe8d6;
+  background: #ffd5c2;
   text-align: center;
-  color: #333333;
+}
+
+
+.convert {
+float: right;
+font-weight: bold;
+}
+
+a:link {
+  color: #588b8b;
+}
+
+a:hover{
+  color: #777777;
+}
+
+a:visited {
+  color: #c8553d;
 }
 
 h1 {
@@ -30,16 +47,13 @@ h3 {
   padding: 10px;
 }
 
-.icon {
-margin: auto;}
-
-.celsius {
+.unit {
   font-size: 60px;
 }
 
 .row {
-  border-top: 1px solid #99582a;
-  border-bottom: 1px solid #99582a;
+  border-top: 1px solid #c8553d;
+  border-bottom: 1px solid #c8553d;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,7 +64,7 @@ input {
 }
 
 button {
-  background-color: #99582a;
+  background-color: #c8553d;
   color: #ffffff;
   border-radius: 5px;
   margin: 3px;
