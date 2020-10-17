@@ -1,71 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>SheCodes Weather App Project</title>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    <script
-    src="https://kit.fontawesome.com/d32a8945c5.js"
-    crossorigin="anonymous"
-  ></script>
+
+<head>
+  <title>SheCodes Weather App Project</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/d32a8945c5.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/styles.css" />
-  </head>
+</head>
 
-  <body>
-    <div class="frame">
-    <div id="app"></div>
-    <h3 id="date">January 01, 2000</h3>
-    <h3 id="time">10:00</h3>
-			<h1 id="city">Search City...</h1>
-          <div class="temptoday">
-            <span id="temptoday"></span>
-            <span class="celsius">°C</span>
-            <h3>
-            <span id="description"> </span>  | humidity: <span id="humidity"></span>% |  wind speed: <span id="wind"></span> m/s
-          </h3>
-            </div>
+<body>
+  <div class="frame">
+    <h1 id="date">January 01, 2000</h1>
+    <h1 id="time">10:00</h1>
+    <h2 id="city"></h2>
+    <div class="temptoday">
+      <span id="temptoday"></span>
+      <span class="celsius">°C</span>
+        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Partly cloudy" id="icon"/>
 
-			<br>
-    <section class="forecast">
-        <div colspan="5" id="forecast"><h2>Hourly Forecast</h2></div>
-        <div class="container">
-
-            <div class="row row-cols-5">
-                <div class="col">10:00</div>
-                <div class="col">11:00</div>
-                <div class="col">12:00</div>
-                <div class="col">13:00</div>
-                <div class="col">14:00</div>
-                <div class="col">🌤 <br>25°C</div>
-                <div class="col">⛅️ <br>25°C</div>
-                <div class="col">☀️ <br>31°C</div>
-                <div class="col">☀️ <br>29°C</div>
-                <div class="col">☀️ <br>30°C</div>
-            </div>
-        </div>
-    </section>
-
-		<br>
-		<div class="input-group mb-3">
-      <form id="search-box">
+    </div>
+      <h3>
+        <span id="description"> </span>
+        <br>
+        humidity: <span id="humidity"></span>% | wind speed: <span id="wind"></span> m/s
+      </h3>
+      <br>
+      <h2>Forecast</h2>
+      <div class="row" id="forecast"></div>
+      <br>
+      <div class="input-group mb-3">
+        <form id="search-box">
           <input type="text" placeholder="Enter City" class="input" id="search-input">
           <button type="submit" id="search">Search <i class="fas fa-search"></i></button>
           <button type="submit" id="current">Current Location <i class="fas fa-location-arrow"></i> </button>
-      </form>
+        </form>
       </div>
-      </div>
-      <br>
-      <footer>
-        <a href="https://github.com/photoenpointe/shecodes">Open-source code</a> by Yoshie B.
-      </footer>
   </div>
-  </body>
-  <script src="src/script.js"></script>
+  <br>
+  <footer>
+    <a href="https://github.com/photoenpointe/shecodes">Open-source code</a> by Yoshie B.
+  </footer>
+  </div>
+</body>
+<script src="src/script.js"></script>
+
 </html>
