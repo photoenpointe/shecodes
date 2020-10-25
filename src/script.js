@@ -110,14 +110,14 @@ function getLocation(position) {
 
   axios.get(apiURL).then(showWeather);
 
-  apiURL = `https://api.openweathermap.org/data/2.5/forecast/hourly?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(`${apiURL}&appid=${apiKey}`).then(showForecast);
 
 }
 
 function showFahrenheit(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temptoday","weather-forecast-temperature");
+  let temperatureElement = document.querySelector("#temptoday", "weather-forecast-temperature");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let Fahrenheit = (Celsius * 9) / 5 + 32;
@@ -128,7 +128,7 @@ function showCelsius(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temptoday"); 
+  let temperatureElement = document.querySelector("#temptoday");
   temperatureElement.innerHTML = Math.round(Celsius);
 }
 
